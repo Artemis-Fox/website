@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>The best website in the world!</title>
-		<link>http://localhost:1313/</link>
+		<link>https://jamiesimpson.xyz/</link>
 		<description>Recent content on The best website in the world!</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,26 +12,26 @@
 		
 			<lastBuildDate>Mon, 10 Nov 2025 10:00:00 -0300</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://jamiesimpson.xyz/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>I played VTMB2</title>
-				<link>http://localhost:1313/posts/i-played-vtmb2/</link>
+				<link>https://jamiesimpson.xyz/posts/i-played-vtmb2/</link>
 				<pubDate>Mon, 10 Nov 2025 10:00:00 -0300</pubDate>
-				<guid>http://localhost:1313/posts/i-played-vtmb2/</guid>
+				<guid>https://jamiesimpson.xyz/posts/i-played-vtmb2/</guid>
 				<description>&lt;h2 id=&#34;in-the-world-of-darkness&#34;&gt;In the World of Darkness&lt;/h2&gt;&#xA;&lt;p&gt;this is a masquerade violation&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>I saw the minecraft movie</title>
-				<link>http://localhost:1313/posts/i-saw-minecraft/</link>
+				<link>https://jamiesimpson.xyz/posts/i-saw-minecraft/</link>
 				<pubDate>Mon, 21 Apr 2025 10:00:00 -0300</pubDate>
-				<guid>http://localhost:1313/posts/i-saw-minecraft/</guid>
+				<guid>https://jamiesimpson.xyz/posts/i-saw-minecraft/</guid>
 				<description>&lt;h2 id=&#34;yep-i-saw-the-minecraft-movie&#34;&gt;Yep, i saw the minecraft movie&lt;/h2&gt;&#xA;&lt;p&gt;It wasnt great&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>And so it begins</title>
-				<link>http://localhost:1313/posts/and-so-it-begins/</link>
+				<link>https://jamiesimpson.xyz/posts/and-so-it-begins/</link>
 				<pubDate>Mon, 31 Mar 2025 10:00:00 -0300</pubDate>
-				<guid>http://localhost:1313/posts/and-so-it-begins/</guid>
+				<guid>https://jamiesimpson.xyz/posts/and-so-it-begins/</guid>
 				<description>&lt;h2 id=&#34;indtroduction&#34;&gt;indtroduction&lt;/h2&gt;&#xA;&lt;p&gt;The first official blog post!&lt;/p&gt;</description>
 			</item>
 	</channel>
