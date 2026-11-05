@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>The best website in the world!</title>
+    <link rel="canonical" href="http://localhost:1313/">
+    
+    
+    
+    <meta name="description" content="">
+    
+    
+    
+    <style>
+
+
+
+
+    
+
+
+:root {
+    --site-bg: url("");
+    --accent-color: #2c3e50;
+    --select-color: #34495e;
+    --link-color: #ecf0f1;
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --bg-color2: #0a1c30;
+    --border-color: #000000;
+    --special-text-color: #94C7E5;
+    --post-header-color: white;
+    --post-shadow-color: #00012355;
+    --outline-color: #0a1c30;
+    --outline-color2: #4e5f85;
+    --list-style-type: "";
+    --list-style-image: url("");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@-moz-document url-prefix() {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-color) #00000000;
+    }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    -webkit-border-radius: .3rem;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+::selection {
+    background: var(--select-color);
+    color: var(--border-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--site-bg);
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+p {line-height: 1.5em;}
+
+div.tags {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+div.tags > p.tags {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+div.tags > a {
+    margin-top: .5rem;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: var(--post-header-color);
+    filter: drop-shadow(2px 0 0 var(--outline-color)) drop-shadow(0 2px 0 var(--outline-color)) drop-shadow(-2px 0 0 var(--outline-color)) drop-shadow(0 -2px 0 var(--outline-color))drop-shadow(0 1px 1px var(--outline-color2)) drop-shadow(1px 0 1px var(--outline-color2));
+}
+
+h4,
+h5,
+h6 {color: var(--special-text-color);}
+
+header {
+    background-size: 100%;
+    background-position: center;
+    min-height: 80px;
+    margin: 0 0;
+    align-content: center;
+}
+
+header > h1 {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    margin: 0 auto;
+    font-size: 2em;
+ 
+     
+    max-width: 48rem;
+    padding: 6px 12px;
+    border-radius: 1em;
+    border: 4px double var(--outline-color);
+    filter: none;
+    text-align: center;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+
+ul.tags {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+ul.tags li {
+    display: inline-block;
+    margin: 0 .2rem;
+}
+
+li.page-item {
+    list-style: none;
+}
+
+li.page-item a{
+    display: inline-flex;
+    font-size: 1rem;
+    margin: .2rem;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+li.page-item.active a{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li.page-item.disabled a{
+    cursor: not-allowed;
+}
+
+li.page-item:not(.disabled):not(.active) a:hover{
+    background-color: var(--select-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li {
+    
+        list-style-type: var(--list-style-type);
+    
+}
+
+nav {margin: 1em;}
+
+nav.links > ul {
+    max-width: 960px;
+    margin: auto;
+    line-height: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+nav.links li {
+    text-align: center;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+nav.links li > a {
+    font-weight: bold;
+    background-color: var(--bg-color);
+    border: 4px double var(--outline-color);
+    padding: .5em 3em;
+    text-decoration: none;
+}
+
+nav.links li > a:visited {color: var(--link-color);}
+nav.links li > a:hover {
+    color: var(--accent-color);
+    background-color: var(--select-color);
+}
+
+nav.languages {
+    margin: .3em;
+    text-align: center;
+}
+
+
+nav.languages ul {
+    display: inline-block;
+}
+
+nav.languages ul li {
+    display: inline-block;
+}
+
+a {
+    color: var(--link-color);
+    border-radius: .3em;
+    transition: .2s ease-out;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition: .2s ease;
+}
+
+#sidebar {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    height: fit-content;
+    min-width: 320px;
+    margin-top: 1em;
+    margin-right: 2em;
+    border-radius: .5em;
+}
+
+.small-box {
+    max-width: 240px;
+    margin: auto;
+    border: 2px solid var(--bg-color);
+    font-size: 11px;
+    line-height: 1.5rem;
+}
+
+#avatar {
+    margin: .5em;
+    max-width: 320px;
+}
+
+ 
+.flower {
+    width: 300px; 
+    aspect-ratio: 1;
+    
+    
+        border-radius: 50%;
+    
+    
+}
+
+#bio {
+    margin: 20px;
+    padding: .2em;
+    background: var(--bg-color);
+    border: 4px double var(--bg-color2);
+    border-radius: 2em;
+    font-size: small;
+}
+
+#bio p { margin: 1em; }
+
+#content {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    padding: 1em;
+    padding-top: 0;
+}
+
+#top {
+    background-color: var(--bg-color);
+}
+
+#top section {
+    background-color: var(--bg-color2);
+    border-radius: .5em;
+    margin-bottom: 10px;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+article {
+    background-color: var(--bg-color2);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+article img {
+    max-width: 100%;
+}
+
+.readmore summary {
+    font-weight: bold;
+    color: var(--special-text-color);
+    list-style: none;
+    cursor: pointer;
+}
+
+header h1 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--special-text-color);
+}
+
+header h1 a:visited {
+    color: inherit;
+}
+
+header h1 a:hover {
+    color: inherit;
+}
+
+.readmore div {
+    display: inline;
+}
+
+.readmore div p {
+    display: block;
+}
+
+.read-more-btn {
+    display: inline;
+    cursor: pointer;
+    margin-left: 4px;
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.readmore summary::-webkit-details-marker {
+  display: none;
+}
+
+.readmore[open] > summary {
+    border-bottom: 2px dashed var(--bg-color);
+    padding-bottom: .6em;
+    margin-bottom: .6em;
+}
+
+.post-header {
+    color: var(--special-text-color);
+    font-weight: bold;
+    padding: .5rem 0;
+    border-bottom: 4px double var(--outline-color);
+}
+
+.timestamp {
+    font-weight: normal;
+    font-size: smaller;
+    margin: .2em;
+    float: right;
+}
+
+.tag-item p {
+    font-size: smaller;
+}
+
+.photosetx2,
+.photosetx3 {
+    display: grid;
+    gap: 4px;
+    align-items: center;
+}
+
+.photosetx2 {grid-template-columns: 1fr 1fr;}
+.photosetx3 {grid-template-columns: 1fr 1fr 1fr;}
+
+.cropped {
+    width: 156px;
+    height: 156px;
+    overflow: hidden;
+    object-position: 25% 25%;
+}
+.photosetx2 img,
+.photosetx3 img {object-fit: cover;}
+
+.center { text-align: center; }
+
+.img-right {
+    max-width: 7.5em;
+    max-height: 7.5em;
+    float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.small-text {
+    font-size: 11px;
+    text-shadow: var(--bg-color) 1px 1px;
+}
+
+.dropbox-btn {
+    color: var(--link-color);
+    font-weight: bold;
+    background-color: var(--bg-color);
+     
+    border: 1px solid var(--outline-color);
+     
+    text-decoration: none;
+}
+
+.dropbox-content[visible] {
+    display: block;
+}
+
+.dropbox-content {
+    display: none;
+    position: absolute;
+    z-index: 1
+}
+
+.table-of-contents {
+    background-color: var(--bg-color2);
+    padding: .3em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+
+.table-of-contents.sidebar {
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+    width: 10rem;
+    flex-shrink: 0;
+    max-height: calc(100vh - 2rem);
+    overflow-x: auto;
+}
+
+.table-of-contents.float {
+    width: max-content;
+    max-width: 50vw;
+    max-height: 50%;
+    overflow: auto;
+}
+
+.table-of-contents nav {
+    margin: 0 .5em;
+}
+
+.table-of-contents nav ul {
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.table-of-contents nav li {
+    margin: .3em 0;
+}
+
+#single-post {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#single-post > article {
+    max-width: 48rem
+}
+
+#single-post > article > #post-toc-mobile {
+    display: none;
+}
+
+ 
+@media only screen and (max-width: 800px) {
+    #content {
+        flex-wrap: wrap;
+    }
+    #sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+        border-radius: .3em;
+    }
+    header {min-height: 110px;}
+    header > h1 { 
+        width: fit-content;
+        padding: .3em 1em;
+    }
+    nav.links > ul {
+     
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #bio {width: 50%;}
+    
+    #sidebar ul {
+        line-height: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    #sidebar > .small-box li {
+        margin: .3em 1em;
+    }
+
+    #single-post > .table-of-contents.sidebar {
+        display: none;
+    }
+
+    #single-post > article > #post-toc-mobile {
+        display: inline;
+    }
+}
+
+pre {
+    border:1px solid var(--outline-color);
+    border-radius:6px;
+    padding:0.75rem 1rem;
+    margin:1.2rem 0;
+    overflow-x:auto;  
+}
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.170.0-DEV">
+</head>
+<body>
+        <header><h1 id="The best website in the world!"><a href="http://localhost:1313/">The best website in the world!</a></h1></header>
+<main>
+    
+    
+    <div id="content">
+    <aside id="sidebar">
+        <div id="avatar">
+            
+            <img class="flower" src="/Intro_PFP.webp">
+            
+        </div>
+        
+        <div id="bio">
+        
+            <p>RAWR XD</p>
+
+        
+        </div>
+        
+        <div class="small-box">
+            
+            </ul>
+        </div>
+
+        
+        
+        <nav class="links">
+            <ul>
+            
+            
+                <li><a href="mailto:jamie@jamiesimpson.xyz">Email</a></li>
+            
+                <li><a href="https://divecko.itch.io/">itch.io</a></li>
+            
+                <li><a href=""></a></li>
+            
+                <li><a href=""></a></li>
+            
+            
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article id="top" class="clearfix">
+            
+            <section>
+            <div class="img-right">
+                <img src="">
+            </div>
+            <div>
+            <h1>welcome to my blog~!</h1>
+            
+                <p>Hello! my name is Jamie Simpson, a student programmer and all around nerd.</p>
+            
+                <p>I am currently studying for a bachelors degree in computer science in the hopes of one day becoming a game designer.</p>
+            
+                <p>My hobbies include playing video games, reading, writing, tabletop RPGs, and working on personal projects.</p>
+            
+                <p>I hope you enjoy following my blog! Here you can email me, my stories, games, and other things I make!</p>
+            
+            </div>
+            </section>
+            <section>
+            <h4>things i love:</h4>
+                <ul>
+                
+                    <li>coding</li>
+                
+                    <li>cats</li>
+                
+                    <li>coffee</li>
+                
+                </ul>
+            </section>
+            
+        </article>
+    
+    
+    
+        <article id="post-0">
+            <button id="post-toc-btn-0" class="dropbox-btn" onclick="toggleDropbox('post-toc-0')" >☰</button>
+            <div id="post-toc-0" class="dropbox-content table-of-contents float">
+                
+
+  <nav class="toc">
+  <ul>
+
+      <li>
+        <a href="/posts/i-played-vtmb2/#in-the-world-of-darkness" class="toc-item toc-level-1">
+          
+          
+          
+          1.
+           In the World of Darkness
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/i-played-vtmb2/#rawr" class="toc-item toc-level-2">
+          
+          
+          
+          1.1.
+           RAWR
+        </a>
+      </li>
+  </ul>
+  </nav>
+
+            </div>
+            
+            <h2><a href="/posts/i-played-vtmb2/">I played VTMB2</a></h2>
+            
+            tags:
+            
+            <a href="/tags/gameing">gameing</a>
+            
+            <div class="post-header">
+                @jamie <span class="timestamp">10/11/2025</span>
+            </div>
+            <p><h2 id="in-the-world-of-darkness">In the World of Darkness</h2>
+<p>this is a masquerade violation</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h3 id="rawr"> …</h3></div>
+                <div class="full-content" style="display:none;"><h3 id="rawr">RAWR</h3>
+<p>            So I played VTMB2 and was sorely disappointed. The original is a cult classic, one that I&rsquo;m a big fan of, If you like RPGs Id say give bloodline 1 a shot its pretty cheap on GOG. The sequel though, I should have realized it was doomed when paradox (The games publisher) fired the original dev team half way through. Originally being developed by Hardsuit Labs and then replaced by The Chinese Room. This game was in development hell for like over 6 years and you can tell. The gameplay is what suffered the most, the game is supposed to be an RPG but its like bloodlines 2 only heard the concept of what an RPG is and tried to fit in. Unlike the first game you cant upgrade stats or skills you can only use earned skill points to unlock a vampire power from your specific clan. you can get powers from other clans but that requires grinding out bloodpoints by just finding random NPCs with the right kind of bloodpoints you need.</p>
+<p>            By the end of the game I had over 23 skill points that I couldn&rsquo;t really spend because I already had all the powers I wanted. The combat is an exercise in annoyance because its first person hand to hand combat. The original game you could use fists, fire arms, melee weapons, but in two all you get is trying to fisticuff a bunch of people and vampires who can use melee weapons and guns so it becomes a cluster fuck with any encounter bigger than like 3 enemies. You dont even have a block button you just have to keep running around and dodging hoping you dont get shot in the ass with buckshot while trying manhandle a vampire. The story is equally lack luster, It tries to give the illusion of being a mystery with a twist villian who only really works as a twist because the game is so short you don&rsquo;t spend enough time with them to have any foreshadowing or clues to their betrayal. You play as Phyre, or the Nomad, who wakes up in Seattle with a brand that saps their power and a voice in his head named Fabien who was a detective vampire in the city. Most of the characters, including Phyre, are really forgettable and one note. Fabien being the one exception I actually had fun listening to him and playing as him occasionally.</p>
+<p>            Honestly I think Fabien should have been the main character, hes like the one character in the game with a personality and he has much more of an vested interest in Seattle and its inhabitants vampire and human alike. He has more of a relationship with his fellow vampires and honestly it might have made the twist villian hit more given Fabiens relationship with them. That might just be my bias towards detective characters though. The game does have side quests but they are completely option and feel like tacked on busy work because rpgs are supposed to have side quests. are there good parts? sure, its not as technically jank as the original. Some of the powers where cool. But when the only improvements you can give to a sequel of a game from 2004 is graphical and technical, you&rsquo;ve kind of fucked it. Thats it for me TTFN! <span class="read-more-btn" onclick="toggleReadMore('post-0')">%!s(<nil>)</span></p></div>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-1">
+            <button id="post-toc-btn-1" class="dropbox-btn" onclick="toggleDropbox('post-toc-1')" >☰</button>
+            <div id="post-toc-1" class="dropbox-content table-of-contents float">
+                
+
+  <nav class="toc">
+  <ul>
+
+      <li>
+        <a href="/posts/i-saw-minecraft/#yep-i-saw-the-minecraft-movie" class="toc-item toc-level-1">
+          
+          
+          
+          1.
+           Yep, i saw the minecraft movie
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/i-saw-minecraft/#rawr" class="toc-item toc-level-2">
+          
+          
+          
+          1.1.
+           rawr
+        </a>
+      </li>
+  </ul>
+  </nav>
+
+            </div>
+            
+            <h2><a href="/posts/i-saw-minecraft/">I saw the minecraft movie</a></h2>
+            
+            tags:
+            
+            <a href="/tags/movie%20review">movie review</a>
+            
+            <div class="post-header">
+                @jamie <span class="timestamp">21/04/2025</span>
+            </div>
+            <p><h2 id="yep-i-saw-the-minecraft-movie">Yep, i saw the minecraft movie</h2>
+<p>It wasnt great</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h3 id="rawr"> …</h3></div>
+                <div class="full-content" style="display:none;"><h3 id="rawr">rawr</h3>
+<p>            So I bit the bullet and I watched the Minecraft movie, I&rsquo;m gonna be honest its really bad, like really bad. I know this sounds really silly but it genuinely made me angry. I admit I&rsquo;m not the biggest minecraft fan its not like i play it every day or anything. However I do think its a really good game, special even, the impact this game has had on the world is really crazy to think about it. Music videos, lets plays, fan animations, many youtubers have become house hold names by playing minecraft. Not only that but minecraft is even used in education used to teach math, computer science, agriculture and even history! I have seen people use minecraft to create an actual working phone in minecraft and order pizza from inside the game.</p>
+<p>            And the movie is nothing like that, its a generic adventure story made on an assembly line. its empty calories, I don&rsquo;t remember the characters names the plot is so bare bones it can be hung up in a science class and the effects are just as bad if not worse than the snow white remake. And I know, its not that deep its just a goofy kids movie, but even then I don&rsquo;t think the movie works by that metric either because the jokes aren&rsquo;t funny. Almost every joke in the movie is a non sequitur and several of the jokes are strangely sexual for a kids movie. And not in a double entendre sneak this in for the parents kind of way Jack Black literally tells Jason Mamoa to let his hips guide him in a scene.</p>
+<p>            Everything about this movie feels like a cynical cash grab to me and I wouldn&rsquo;t recommend seeing it. Even if you are just looking for a dumb movie to entertain your kids there are movies that actually try to be entertaining and fun. Seriously check out &ldquo;The Day the Earth Blew Up&rdquo; its a loony tunes movie that came out in 2024 and it was still really funny. But those are just my thoughts on the whole thing, have a good day and I hope you guys had a great Easter! <span class="read-more-btn" onclick="toggleReadMore('post-1')">%!s(<nil>)</span></p></div>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-2">
+            <button id="post-toc-btn-2" class="dropbox-btn" onclick="toggleDropbox('post-toc-2')" >☰</button>
+            <div id="post-toc-2" class="dropbox-content table-of-contents float">
+                
+
+  <nav class="toc">
+  <ul>
+
+      <li>
+        <a href="/posts/and-so-it-begins/#indtroduction" class="toc-item toc-level-1">
+          
+          
+          
+          1.
+           indtroduction
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/and-so-it-begins/#hello" class="toc-item toc-level-2">
+          
+          
+          
+          1.1.
+           Hello!
+        </a>
+      </li>
+  </ul>
+  </nav>
+
+            </div>
+            
+            <h2><a href="/posts/and-so-it-begins/">And so it begins</a></h2>
+            
+            tags:
+            
+            <a href="/tags/intro">intro</a>,
+            
+            <a href="/tags/first">first</a>
+            
+            <div class="post-header">
+                @jamie <span class="timestamp">31/03/2025</span>
+            </div>
+            <p><h2 id="indtroduction">indtroduction</h2>
+<p>The first official blog post!</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h3 id="hello"> …</h3></div>
+                <div class="full-content" style="display:none;"><h3 id="hello">Hello!</h3>
+<p>And here we are, my crappy blog is live! I will defenitly be redoing things at some point. Right now to make a new blog post I have to make a new html page by hand which can be really time consuming but I wanted to get a hand on HTML and CSS before using more turn key solutions like HUGO or Wordpress. One day i&rsquo;ll learn Javascript and maybe make a more interactive site but thats not needed just yet.</p>
+<p>            I don&rsquo;t have a plan on a strict schedule but I will try to post some what regularly. I&rsquo;ll post articles, projects i&rsquo;m working on or just cool things. Maybe I&rsquo;ll even try my hands at a webcomic who knows. Now that I have my own blog the sky is the limit! TTFN! <span class="read-more-btn" onclick="toggleReadMore('post-2')">%!s(<nil>)</span></p></div>
+                
+            </div>
+            
+        </article>
+    
+    
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleReadMore(id) {
+        var post = document.getElementById(id)
+        var fullContent = post.getElementsByClassName("full-content")[0];
+        var btnText = post.getElementsByClassName("read-more-btn")[0];
+        var textContent = post.getElementsByClassName("text-content")[0];
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML =  null ;
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML =  null ;
+        }
+    }
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+    </main>
+
+    
+</main>
+</body>
+</html>

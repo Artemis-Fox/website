@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Intro on The best website in the world!</title>
+		<link>http://localhost:1313/tags/intro/</link>
+		<description>Recent content in Intro on The best website in the world!</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 31 Mar 2025 10:00:00 -0300</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>And so it begins</title>
+				<link>http://localhost:1313/posts/and-so-it-begins/</link>
+				<pubDate>Mon, 31 Mar 2025 10:00:00 -0300</pubDate>
+				<guid>http://localhost:1313/posts/and-so-it-begins/</guid>
+				<description>&lt;h2 id=&#34;indtroduction&#34;&gt;indtroduction&lt;/h2&gt;&#xA;&lt;p&gt;The first official blog post!&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
