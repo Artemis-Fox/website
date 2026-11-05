@@ -1,7 +1,0 @@
-baseURL = 'https://jamiesimpson.xyz/'
-locale = 'en-us'
-title = 'The best website in the world!'
-theme = "neopost"
-
-[params]
-theme = "dark-blue"
