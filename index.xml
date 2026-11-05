@@ -34,5 +34,12 @@
 				<guid>https://jamiesimpson.xyz/posts/and-so-it-begins/</guid>
 				<description>&lt;h2 id=&#34;indtroduction&#34;&gt;indtroduction&lt;/h2&gt;&#xA;&lt;p&gt;The first official blog post!&lt;/p&gt;</description>
 			</item>
+			<item>
+				<title>mysterious meow</title>
+				<link>https://jamiesimpson.xyz/posts/the-move-to-hugo/</link>
+				<pubDate>Sat, 01 Feb 2025 10:00:00 -0300</pubDate>
+				<guid>https://jamiesimpson.xyz/posts/the-move-to-hugo/</guid>
+				<description>&lt;h2 id=&#34;meow&#34;&gt;meow&lt;/h2&gt;&#xA;&lt;p&gt;meow&amp;hellip; meow rawr, meow meow meow!&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>
